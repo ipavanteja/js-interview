@@ -13,7 +13,6 @@ function arrayOrder(arr) {
   let dupl = false;
   let i = 0;
   while ((asce || desc) && i < arr.length) {
-    // console.log(asce, desc, i, arr.length);
     if (arr[i] < arr[i + 1]) {
       desc = false;
     } else if (arr[i] > arr[i + 1]) {
@@ -31,12 +30,9 @@ function arrayOrder(arr) {
     }
   }
 
-  //   console.log('out side while ' + asce, desc);
   if (asce === true) {
-    // console.log(asce);
     console.log('Ascending Order');
   } else if (desc === true) {
-    // console.log(desc);
     console.log('Descending Order');
   } else if (dupl === true) {
     console.log('Contains Duplicate Elements');
